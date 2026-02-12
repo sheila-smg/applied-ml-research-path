@@ -20,6 +20,11 @@ Summaries and key takeaways from foundational papers. See [papers/paper-list.md]
 - [Visualizing CNNs (Zeiler & Fergus 2014)](papers/zeiler-fergus-2014.md)
 - [ResNets (He et al. 2016)](papers/resnet-2016.md)
 
+### Other Resources
+
+- [Self-assessment quiz](week01-deep-learning-basics/exercises/dl-quiz.md) — 15 questions to test understanding of the notebooks
+- [Key concepts](notes/concepts.md) — definitions and intuitions for core deep learning terms
+
 ## Repository Structure
 
 ```
@@ -27,8 +32,8 @@ week01-deep-learning-basics/
     notebooks/        # Jupyter notebooks — core implementations
     src/              # Reusable Python modules
     exercises/        # Self-assessment questions
-papers/               # Paper summaries and reading notes
-notes/                # Conceptual notes and definitions
+papers/               # Paper summaries with key contributions and limitations
+notes/                # Conceptual definitions and term glossary
 ```
 
 ## Setup
