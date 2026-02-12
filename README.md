@@ -11,6 +11,7 @@ Hands-on deep learning implementations built from first principles, progressing 
 | 01 | [Linear Model & Neuron](week01-deep-learning-basics/notebooks/01_linear_model_and_neuron.ipynb) | A single neuron as linear regression. Closed-form vs gradient descent. Why stacking linear layers adds no expressiveness. |
 | 02 | [Nonlinearity & MLP](week01-deep-learning-basics/notebooks/02_nonlinearity_mlp_training_intuition.ipynb) | Why ReLU matters. Manual backpropagation through a 2-layer MLP. Solving a non-linearly separable problem. |
 | 03 | [CIFAR-10 Case Study](week01-deep-learning-basics/notebooks/03_case_study.ipynb) | End-to-end PyTorch pipeline. MLP baseline vs CNN on image classification. Training loops, evaluation, and comparison. |
+| 04 | [Saliency Maps](week01-deep-learning-basics/notebooks/04_saliency_maps.ipynb) | Which pixels drive the CNN's prediction? Gradient-based saliency maps as the simplest interpretability method. |
 
 ### Paper Notes
 
@@ -51,3 +52,4 @@ Datasets (e.g. CIFAR-10) are downloaded automatically by the notebooks via `torc
 - **Notebook 01**: Gradient descent recovers true weights, matching the closed-form solution.
 - **Notebook 02**: MLP with ReLU achieves loss ~0.001 on circular boundary vs ~0.248 for a linear model.
 - **Notebook 03**: CNN reaches 70% validation accuracy on CIFAR-10 vs 49% for an MLP baseline (5 epochs each).
+- **Notebook 04**: Saliency maps reveal which pixels the CNN relies on, connecting backpropagation to model interpretability.
