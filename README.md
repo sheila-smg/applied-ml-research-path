@@ -1,72 +1,48 @@
-# applied-ml-research-path
+# Applied ML Research Path
 
-Applied Research – 6 Week Intensive Plan
+Hands-on deep learning implementations built from first principles, progressing from a single neuron to convolutional networks on real data. Each notebook is self-contained and focuses on building intuition through code rather than using high-level abstractions.
 
-This repository contains my structured 6-week plan to prepare for Applied Scientist and Deep Learning–focused Data Science roles.
-The goal is to consolidate fundamentals, implement practical deep learning components, study interpretability and robustness, and practice applied research workflows through hands-on exercises and paper readings.
+## What's Inside
 
-The structure of the repository is modular and organized by week. Each week includes notebooks, source code and self-assessment exercises.
+### Notebooks
 
-Repository Structure:
+| # | Notebook | What it covers |
+|---|----------|----------------|
+| 01 | [Linear Model & Neuron](week01-deep-learning-basics/notebooks/01_linear_model_and_neuron.ipynb) | A single neuron as linear regression. Closed-form vs gradient descent. Why stacking linear layers adds no expressiveness. |
+| 02 | [Nonlinearity & MLP](week01-deep-learning-basics/notebooks/02_nonlinearity_mlp_training_intuition.ipynb) | Why ReLU matters. Manual backpropagation through a 2-layer MLP. Solving a non-linearly separable problem. |
+| 03 | [CIFAR-10 Case Study](week01-deep-learning-basics/notebooks/03_case_study.ipynb) | End-to-end PyTorch pipeline. MLP baseline vs CNN on image classification. Training loops, evaluation, and comparison. |
 
-week01/
-    notebooks/        # Jupyter notebooks for DL fundamentals, interpretability and robustness
-    src/              # Python modules with reusable implementations
-    exercises/        # Self-assessment questions and small tasks
+### Paper Notes
 
-notes/                # Conceptual notes, definitions and summaries
-papers/               # Paper summaries and reading templates
-README.md             # You are here
+Summaries and key takeaways from foundational papers. See [papers/paper-list.md](papers/paper-list.md) for the full list.
 
+- [Deep Learning (LeCun, Bengio, Hinton 2015)](papers/lecun-bengio-hinton-2015.md)
+- [Visualizing CNNs (Zeiler & Fergus 2014)](papers/zeiler-fergus-2014.md)
+- [ResNets (He et al. 2016)](papers/resnet-2016.md)
 
-Purpose of the 6-Week Plan
+## Repository Structure
 
-The plan aims to:
-• Refresh and deepen core deep learning concepts
-• Build intuition for neural network mechanics
-• Understand and implement interpretability techniques
-• Explore robustness, adversarial examples and evaluation
-• Read and summarise key papers in applied ML
-• Strengthen research-level thinking and implementation skills
+```
+week01-deep-learning-basics/
+    notebooks/        # Jupyter notebooks — core implementations
+    src/              # Reusable Python modules
+    exercises/        # Self-assessment questions
+papers/               # Paper summaries and reading notes
+notes/                # Conceptual notes and definitions
+```
 
-This repo will track all work completed across the six weeks.
+## Setup
 
----
+```bash
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
 
-Week 01 Focus
+Datasets (e.g. CIFAR-10) are downloaded automatically by the notebooks via `torchvision.datasets`.
 
-• Deep Learning Fundamentals
-• Activation functions and gradient behaviour
-• Backpropagation mechanics
-• Saliency maps and basic interpretability
-• Introduction to robustness and adversarial attacks
-• First applied research workflow
+## Key Results
 
-More details live inside week01/notebooks.
-
----
-
-How to Use This Repository:
-
-1. Navigate to the week you want to explore
-
-2. Open notebooks inside weekXX/notebooks/
-
-3. Reuse helper functions implemented under src/
-
-4. Complete exercises in exercises/ to consolidate learning
-
-5. Keep conceptual notes in notes/ and paper summaries in papers/
-
-This structure is designed to scale smoothly across all 6 weeks.
-
----
-
-Status:
-
-Week 01: In progress
-Week 02: Pending
-Week 03: Pending
-Week 04: Pending
-Week 05: Pending
-Week 06: Pending
+- **Notebook 01**: Gradient descent recovers true weights, matching the closed-form solution.
+- **Notebook 02**: MLP with ReLU achieves loss ~0.001 on circular boundary vs ~0.248 for a linear model.
+- **Notebook 03**: CNN reaches 70% validation accuracy on CIFAR-10 vs 49% for an MLP baseline (5 epochs each).
