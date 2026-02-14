@@ -8,10 +8,10 @@ Hands-on deep learning implementations built from first principles, progressing 
 
 | # | Notebook | What it covers |
 |---|----------|----------------|
-| 01 | [Linear Model & Neuron](week01-deep-learning-basics/notebooks/01_linear_model_and_neuron.ipynb) | A single neuron as linear regression. Closed-form vs gradient descent. Why stacking linear layers adds no expressiveness. |
-| 02 | [Nonlinearity & MLP](week01-deep-learning-basics/notebooks/02_nonlinearity_mlp_training_intuition.ipynb) | Why ReLU matters. Manual backpropagation through a 2-layer MLP. Solving a non-linearly separable problem. |
-| 03 | [CIFAR-10 Case Study](week01-deep-learning-basics/notebooks/03_case_study.ipynb) | End-to-end PyTorch pipeline. MLP baseline vs CNN on image classification. Training loops, evaluation, and comparison. |
-| 04 | [Saliency Maps](week01-deep-learning-basics/notebooks/04_saliency_maps.ipynb) | Which pixels drive the CNN's prediction? Gradient-based saliency maps as the simplest interpretability method. |
+| 01 | [Linear Model & Neuron](deep-learning-basics/notebooks/01_linear_model_and_neuron.ipynb) | A single neuron as linear regression. Closed-form vs gradient descent. Why stacking linear layers adds no expressiveness. |
+| 02 | [Nonlinearity & MLP](deep-learning-basics/notebooks/02_nonlinearity_mlp_training_intuition.ipynb) | Why ReLU matters. Manual backpropagation through a 2-layer MLP. Solving a non-linearly separable problem. |
+| 03 | [CIFAR-10 Case Study](deep-learning-basics/notebooks/03_case_study.ipynb) | End-to-end PyTorch pipeline. MLP baseline vs CNN on image classification. Training loops, evaluation, and comparison. |
+| 04 | [Saliency Maps](deep-learning-basics/notebooks/04_saliency_maps.ipynb) | Which pixels drive the CNN's prediction? Gradient-based saliency maps as the simplest interpretability method. |
 
 ### Paper Notes
 
@@ -23,13 +23,13 @@ Summaries and key takeaways from foundational papers. See [papers/paper-list.md]
 
 ### Other Resources
 
-- [Self-assessment quiz](week01-deep-learning-basics/exercises/dl-quiz.md) — 15 questions to test understanding of the notebooks
+- [Self-assessment quiz](deep-learning-basics/exercises/dl-quiz.md) — 15 questions to test understanding of the notebooks
 - [Key concepts](notes/concepts.md) — definitions and intuitions for core deep learning terms
 
 ## Repository Structure
 
 ```
-week01-deep-learning-basics/
+deep-learning-basics/
     notebooks/        # Jupyter notebooks — core implementations
     src/              # Reusable Python modules
     exercises/        # Self-assessment questions
@@ -43,6 +43,7 @@ notes/                # Conceptual definitions and term glossary
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
+pip install -e .            # installs shared dlbasics utilities
 ```
 
 Datasets (e.g. CIFAR-10) are downloaded automatically by the notebooks via `torchvision.datasets`.

@@ -1,8 +1,7 @@
-# Paper List – 6 Week Applied Research Plan
+# Paper List
 
-This document collects all papers included in the plan across weeks.
+Foundational papers covered in this repository.
 
-## Week 01
 1. Deep Learning – LeCun, Bengio, Hinton (2015)
    https://www.nature.com/articles/nature14539
 
@@ -11,7 +10,3 @@ This document collects all papers included in the plan across weeks.
 
 3. Deep Residual Learning for Image Recognition – He et al. (2016)
    https://arxiv.org/abs/1512.03385
-
-
-## Future Weeks
-(To be completed as the plan progresses)

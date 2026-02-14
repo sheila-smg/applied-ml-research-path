@@ -1,5 +1,5 @@
 """
-Utility functions used across Week 01 notebooks.
+Shared utilities for the deep learning basics notebooks.
 """
 
 import random
