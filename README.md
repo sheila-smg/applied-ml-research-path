@@ -12,6 +12,7 @@ Hands-on deep learning implementations built from first principles, progressing 
 | 02 | [Nonlinearity & MLP](deep-learning-basics/notebooks/02_nonlinearity_mlp_training_intuition.ipynb) | Why ReLU matters. Manual backpropagation through a 2-layer MLP. Solving a non-linearly separable problem. |
 | 03 | [CIFAR-10 Case Study](deep-learning-basics/notebooks/03_case_study.ipynb) | End-to-end PyTorch pipeline. MLP baseline vs CNN on image classification. Training loops, evaluation, and comparison. |
 | 04 | [Saliency Maps](deep-learning-basics/notebooks/04_saliency_maps.ipynb) | Which pixels drive the CNN's prediction? Gradient-based saliency maps as the simplest interpretability method. |
+| 05 | [Regularization](deep-learning-basics/notebooks/05_regularization.ipynb) | Closing the train/val gap. Data augmentation, dropout, weight decay, and batch normalization compared head-to-head. |
 
 ### Paper Notes
 
@@ -54,3 +55,4 @@ Datasets (e.g. CIFAR-10) are downloaded automatically by the notebooks via `torc
 - **Notebook 02**: MLP with ReLU achieves loss ~0.001 on circular boundary vs ~0.248 for a linear model.
 - **Notebook 03**: CNN reaches 70% validation accuracy on CIFAR-10 vs 49% for an MLP baseline (5 epochs each).
 - **Notebook 04**: Saliency maps reveal which pixels the CNN relies on, connecting backpropagation to model interpretability.
+- **Notebook 05**: Combining data augmentation, dropout, weight decay, and batch normalization improves CNN generalization on CIFAR-10.
