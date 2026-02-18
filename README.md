@@ -1,6 +1,6 @@
 # Applied ML Research Path
 
-Hands-on deep learning implementations built from first principles, progressing from a single neuron to convolutional networks on real data. Each notebook is self-contained and focuses on building intuition through code rather than using high-level abstractions.
+Hands-on deep learning implementations progressing from a single neuron to CNNs and transformers. Each notebook is self-contained and focuses on building intuition through code — starting from first principles, then applying transfer learning with pretrained models.
 
 ## What's Inside
 
@@ -57,4 +57,4 @@ Datasets (e.g. CIFAR-10) are downloaded automatically by the notebooks via `torc
 - **Notebook 03**: CNN reaches 70% validation accuracy on CIFAR-10 vs 49% for an MLP baseline (5 epochs each).
 - **Notebook 04**: Saliency maps reveal which pixels the CNN relies on, connecting backpropagation to model interpretability.
 - **Notebook 05**: Combining data augmentation, dropout, weight decay, and batch normalization improves CNN generalization on CIFAR-10.
-- **Notebook 06**: Fine-tuned DistilBERT reaches ~89% accuracy on IMDb sentiment with only 2k training samples, beating a bag-of-words baseline (~85%).
+- **Notebook 06**: DistilBERT with a frozen base and fine-tuned classifier head reaches ~80% accuracy on IMDb sentiment with 2k training samples, comparable to a bag-of-words baseline (~81%) — demonstrating transfer learning on CPU.
